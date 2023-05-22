@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: assisted-events-scrape-uzau
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: assisted-events-scrape-uzau
+    app.kubernetes.io/part-of: assisted-events-scrape
+  name: assisted-events-scrape-uzau
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: assisted-events-scrape-uzau
+status:
+  loadBalancer: {}
