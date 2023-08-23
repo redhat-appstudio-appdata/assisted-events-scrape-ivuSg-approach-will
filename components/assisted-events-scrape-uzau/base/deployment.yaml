@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: assisted-events-scrape-uzau
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/assisted-installer-tenant/assisted-events-scrape/assisted-events-scrape-uzau@sha256:9b2d00bc4e9f094d28bfa305b17cd6c3d6a9dd610fb85e8c148cffcee0bed934
         imagePullPolicy: Always
         name: container-image
         ports:
